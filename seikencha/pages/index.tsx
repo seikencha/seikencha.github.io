@@ -1,9 +1,15 @@
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { SeikenchaAppBar } from '../components/molecules/SeikenchaAppBar'
-
+import FuwariGirl from 'material-ui-image'
+import { ArtistTitle } from '../components/atoms/ArtistTitle'
+import { KanbanGirlCard } from '../components/atoms/KanbanGirlCard'
 const Home: NextPage = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
 
     <>
@@ -14,13 +20,20 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <SeikenchaAppBar />
-        <h1 >
-          正弦鍵盤茶屋の公式サイトです
-        </h1>
+        <Grid container spacing={2} columns={{ xs: 4, sm: 4, md: 12 }}>
+          <Grid item xs={4}>
+            {!isMobile && <Box display='flex' mt={40} />}
+            <ArtistTitle />
+          </Grid>
+          <Grid item xs={8}>
+            <KanbanGirlCard />
+          </Grid>
+        </Grid>
       </main>
-
       <footer>
-        正弦鍵盤茶屋2022,co.ltd
+        <Typography variant='h6' mt={2}>
+          正弦鍵盤茶屋2022,co.ltd
+        </Typography>
       </footer>
     </>
   )
