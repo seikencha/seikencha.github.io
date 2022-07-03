@@ -1,8 +1,12 @@
 import React from 'react'
+import { SeikenchaAppBar } from '../components/molecules/SeikenchaAppBar'
 
 const discography = () => {
   return (
-    <div>discography</div>
+    <>
+      <SeikenchaAppBar />
+      <div>discography</div>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { SeikenchaAppBar } from '../components/molecules/SeikenchaAppBar'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main >
+        <SeikenchaAppBar />
         <h1 >
           正弦鍵盤茶屋
         </h1>

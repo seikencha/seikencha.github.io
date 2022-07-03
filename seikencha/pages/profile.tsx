@@ -1,8 +1,12 @@
 import React from 'react'
+import { SeikenchaAppBar } from '../components/molecules/SeikenchaAppBar'
 
 const profile = () => {
   return (
-    <div>profile</div>
+    <>
+      <SeikenchaAppBar />
+      <div>MovingOutlined</div>
+    </>
   )
 }
 export default profile
