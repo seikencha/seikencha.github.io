@@ -22,14 +22,16 @@ export const SeikenchaAppBar = () => {
       <AppBar
         sx={{
           backgroundColor: 'white',
+          fontSize: 30,
           color: '#542218'
         }}
         position='static'>
         <Toolbar>
           <Typography sx={{
+            fontWeightBold: 'FontWeight',
             fontSize: 30,
             fontFamily: 'serif'
-          }} >
+          }}>
             <Link
               href='/'
               sx={{
@@ -82,7 +84,7 @@ export const SeikenchaAppBar = () => {
                     }}>
                     {content.title}
                   </Typography>
-                  {content.isExternal ? <LinkOutlinedIcon /> : <Box mx={1} />}
+                  {content.isExternal ? <LinkOutlinedIcon sx={{ fontSize: 20 }} /> : <Box mx={1} />}
                 </Box>
               </Link>
             </Box>
