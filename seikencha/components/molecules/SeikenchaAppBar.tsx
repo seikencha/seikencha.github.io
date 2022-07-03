@@ -23,15 +23,19 @@ export const SeikenchaAppBar = () => {
         sx={{
           backgroundColor: 'white',
           fontSize: 30,
-          color: '#542218'
+          color: '#542218',
+          height: 60
         }}
         position='static'>
         <Toolbar>
-          <Typography sx={{
-            fontWeightBold: 'FontWeight',
-            fontSize: 30,
-            fontFamily: 'serif'
-          }}>
+          <Typography
+            variant='h1'
+            sx={{
+              fontWeightBold: 'FontWeight',
+              fontSize: 30,
+              fontFamily: 'serif'
+            }}
+          >
             <Link
               href='/'
               sx={{

@@ -3,14 +3,15 @@ import React from 'react'
 
 export const ArtistTitle = () => {
   return (
-    <Box display='flex' mt={2}>
-      <Typography sx={{
-        fontWeightBold: 'FontWeight',
-        fontSize: 30,
-        fontFamily: 'serif',
-        color: '#542218',
-        whiteSpace: 'nowrap'
-      }}>
+    <Box display='flex'>
+      <Typography
+        sx={{
+          fontWeightBold: 'FontWeight',
+          fontSize: 30,
+          fontFamily: 'serif',
+          color: '#542218',
+          whiteSpace: 'nowrap'
+        }}>
         正弦鍵盤茶屋
       </Typography>
       <Typography
