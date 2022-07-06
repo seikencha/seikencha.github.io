@@ -5,20 +5,26 @@ import { KanbanGirlCard } from '../components/atoms/KanbanGirlCard'
 import { TitleTypography } from '../components/atoms/TitleTypography'
 import { ProfileCard } from '../components/organisms/ProfileCard'
 import { SeikenchaAppBar } from '../components/organisms/SeikenchaAppBar'
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { TwitterLinkIcon } from '../components/molecules/TwitterLinkIcon'
 import { YouTubeLinkIcon } from '../components/molecules/YoutubeLinkIcon'
+import { LogoCard } from '../components/atoms/LogoCard'
 
 const profile = () => {
   return (
     <Box>
       <SeikenchaAppBar />
-      <TitleTypography title='自己紹介' />
+      <Box display='flex' alignItems='center' height={150} >
+        <Box ml={4} />
+        <LogoCard height={120} />
+        <Box ml={4} />
+        <TitleTypography title='自己紹介' />
+      </Box>
       <KanbanGirlCard height={250} />
-      <Box display='flex'>
+      <Box display='flex' alignItems='center'>
         <TitleTypography
           title='正弦鍵盤茶屋'
           fontSize={30} />
+        <Box ml={1} />
         <Box alignItems='center' justifyContent='center' my={3}>
           <TwitterLinkIcon url='https://twitter.com/seikencha' />
         </Box>
@@ -41,7 +47,11 @@ const profile = () => {
         title='メンバー紹介'
         fontSize={30} />
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container justifyContent="center" spacing={2} columns={{ xs: 6, sm: 8, md: 12 }}>
+        <Grid
+          container
+          justifyContent="center"
+          spacing={2}
+          columns={{ xs: 6, sm: 8, md: 12 }}>
           <Grid item xs={4}>
             <ProfileCard
               name='ずんだちきん'

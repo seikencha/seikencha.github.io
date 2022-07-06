@@ -8,7 +8,7 @@ type TitleTypographyProps = {
 }
 export const TitleTypography: React.FC<TitleTypographyProps> = (props) => {
   return (
-    <Box display='flex' my={3} ml={6}>
+    <Box display='flex' my={3}>
       <Typography
         sx={{
           fontWeightBold: 'FontWeight',
