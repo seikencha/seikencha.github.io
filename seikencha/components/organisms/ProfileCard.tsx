@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
+import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import { TwitterLinkIcon } from '../molecules/TwitterLinkIcon'
 

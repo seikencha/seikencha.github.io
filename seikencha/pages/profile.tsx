@@ -1,4 +1,4 @@
-import { Box, Grid, IconButton, Typography } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import React from 'react'
 import { DescTypography } from '../components/atoms/DescTypography'
 import { KanbanGirlCard } from '../components/atoms/KanbanGirlCard'
@@ -6,7 +6,7 @@ import { TitleTypography } from '../components/atoms/TitleTypography'
 import { ProfileCard } from '../components/organisms/ProfileCard'
 import { SeikenchaAppBar } from '../components/organisms/SeikenchaAppBar'
 import { TwitterLinkIcon } from '../components/molecules/TwitterLinkIcon'
-import { YouTubeLinkIcon } from '../components/molecules/YoutubeLinkIcon'
+import { YouTubeLinkIcon } from '../components/molecules/YouTubeLinkIcon'
 import { LogoCard } from '../components/atoms/LogoCard'
 
 const profile = () => {

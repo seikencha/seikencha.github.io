@@ -1,9 +1,6 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
-import Link from 'next/link'
 import React from 'react'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { ShoppingLinkIcon } from '../molecules/ShoppingLinkIcon'
-import { borderColor } from '@mui/system'
 
 type AlbumCardProps = {
   name: string,
