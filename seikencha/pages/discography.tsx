@@ -1,5 +1,7 @@
+import { Typography } from '@mui/material'
 import React from 'react'
-import { SeikenchaAppBar } from '../components/molecules/SeikenchaAppBar'
+import { KanbanGirlCard } from '../components/atoms/KanbanGirlCard'
+import { SeikenchaAppBar } from '../components/organisms/SeikenchaAppBar'
 
 const discography = () => {
   return (
